@@ -27,7 +27,6 @@ public class ContactController implements ContactsApi {
 
   @Override
   public ResponseEntity<Contact> createContact(@Valid @RequestBody Contact contact) {
-    log.info("In createContact ==> ");
     return new ResponseEntity<>(contactService.createContact(contact), HttpStatus.CREATED);
   }
 
@@ -39,20 +38,17 @@ public class ContactController implements ContactsApi {
 
   @Override
   public ResponseEntity<Contacts> findAllContacts() {
-    log.info("Start find all contacts");
     return new ResponseEntity<>(contactService.findAllContacts(), HttpStatus.OK);
   }
 
   @Override
   public ResponseEntity<Contact> findContact(@PathVariable("id") String id) {
-    log.info("Start findContact");
     return new ResponseEntity<>(contactService.findContactById(id), HttpStatus.OK);
   }
 
   @Override
   public ResponseEntity<Contact> updateContact(
       @PathVariable("id") String id, @Valid @RequestBody Contact contact) {
-    log.info("Start updateContact");
     return new ResponseEntity<>(contactService.updateContact(id, contact), HttpStatus.OK);
   }
 }

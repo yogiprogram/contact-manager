@@ -132,7 +132,7 @@ public interface ContactsApi {
 
     @ApiOperation(value = "Edit Contact", nickname = "updateContact", notes = "Use to update contact information", response = Contact.class, tags={  })
     @ApiResponses(value = { 
-        @ApiResponse(code = 201, message = "OK", response = Contact.class),
+        @ApiResponse(code = 200, message = "OK", response = Contact.class),
         @ApiResponse(code = 204, message = "No content found") })
     @RequestMapping(value = "/contacts/{id}",
         produces = { "application/json" }, 

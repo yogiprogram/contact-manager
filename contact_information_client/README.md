@@ -1,21 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technology and Framework use
+
+- React - (component, router, thunk, dom)
+- Redux
+- Materize css
+
 
 ## Available Scripts
+
+### `npm install`
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3006](http://localhost:3006) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### Below screen shot of application
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Dashboard (List of all contact)
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/Dashboard.png?raw=true)
+
+#### Add a Contact
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/add_user.png?raw=true)
+
+After adding contact 
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/after_user_add.png?raw=true)
+
+#### Edit a contact
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/Edit_user.png?raw=true)
+
+After editing/updating contact
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/After_edit.png?raw=true)
+
+#### Delete or inactive Contact
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/delete_user.png?raw=true)
+
+![Dashboard](https://github.com/yogiprogram/contact-manager/blob/master/screen_shot/after_delete_contact.png?raw=true)
+
+
+
+
+
+
+
 
 ### `npm run build`
 
@@ -36,33 +72,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
