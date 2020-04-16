@@ -1,0 +1,9 @@
+{
+  "apiPackage": "com.demo.contact.api",
+  "modelPackage": "com.demo.contact.api.model",
+  "invokerPackage": "com.demo.contact",
+  "library": "spring-mvc",
+  "dateLibrary": "java8",
+  "interfaceOnly": "true",
+  "hideGenerationTimestamp": true
+}

@@ -1,0 +1,161 @@
+swagger: "2.0"
+info:
+  description: "This is contact information Rest service server."
+  version: "1.0.0"
+  title: "Contact Information. REST API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "yogesh.it2010@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:8182"
+basePath: "/contact-service"
+tags:
+  - name: "contact-api"
+    description: |
+      - List contacts
+      - Add a contact
+      - Edit contact
+      - Delete/Inactivate a contact
+schemes:
+  - "http"
+paths:
+
+  "/contacts":
+    post:
+      summary: "Use to add new contact"
+      operationId: createContact
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: contact
+          required: true
+          description: |
+            Object is use for to create contact.
+             - `first_name`
+             - `last_name`
+             - 'email'
+          schema:
+            $ref: "#/definitions/Contact"
+      responses:
+        201:
+          description: OK
+          schema:
+            $ref: "#/definitions/Contact"
+    get:
+      summary: "List contacts"
+      description: "Find All contacts(List contacts)"
+      operationId: findAllContacts
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/Contacts"
+
+
+  "/contacts/{id}":
+    parameters:
+      - in: path
+        name: id
+        description: "Its service generated contact unique id"
+        required: true
+        type: string
+    get:
+      summary: "Find Contact Information by Id"
+      description: "Find Contact Information by Id"
+      operationId: findContact
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/Contact"
+
+    put:
+      summary: "Edit Contact"
+      description: "Use to update contact information"
+      operationId: updateContact
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: contact
+          required: true
+          description: |
+            Object is use for to update contact.
+             - `first_name`
+             - `last_name`
+             - 'email'
+          schema:
+            $ref: "#/definitions/Contact"
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/Contact"
+        204:
+          description: "No content found"
+
+    delete:
+      summary: "Delete/Inactivate a contact"
+      description: "Use to delete contact information by using id"
+      operationId: deleteContact
+      responses:
+        200:
+          description: "OK"
+        204:
+          description: "No content found"
+
+definitions:
+  Contacts:
+    type: array
+    items:
+      $ref: "#/definitions/Contact"
+
+  Contact:
+    type: object
+    required:
+      - first_name
+      - last_name
+      - email
+    properties:
+      id:
+        readOnly: true
+        type: string
+        example: "c0f55f62-b990-47bc-8caa-f42313669948"
+      first_name:
+        type: string
+        minimum: 3
+        maximum: 40
+        example: "John"
+      last_name:
+        type: string
+        minimum: 3
+        maximum: 40
+        example: "Trump"
+      email:
+        type: string
+        format: email
+        example: "jt@domain.com"
+      phone:
+        type: string
+        example: "+91909232199"
+      status:
+        type: string
+        readOnly: true
+        default: INACTIVE
+        enum: [ACTIVE, INACTIVE]
+        description: >
+          status meanings:
+           * `ACTIVE`   - Contact is active.
+           * `INACTIVE` - Contact is deleted.
+
+
+
+
+
