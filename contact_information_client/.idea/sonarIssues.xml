@@ -3,12 +3,32 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/../../../../../Shared/Previously Relocated Items/Security/mydisk/learning/javacode/src/main/java/com/array/ArrayPuzzalExceptSelfProduct.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../Shared/Previously Relocated Items/Security/mydisk/learning/javacode/src/main/java/com/array/LastStoneWeight.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../Shared/Previously Relocated Items/Security/mydisk/learning/javacode/src/main/java/com/string/ReplaceOneLetterFromString.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../contact-service/README.md">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../contact-service/src/main/java/com/demo/contact/controller/ContactController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/sonarIssues.xml">
           <value>
             <set />
           </value>
@@ -83,6 +103,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/contact/ContactDelete.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/contact/ContactEdit.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/contact/ContactForm.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/contact/ContactList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/contact/ContactNew.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/index.js">
           <value>
             <set />
@@ -129,6 +174,61 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../contact-service/src/main/resources/data.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportFolderAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportFrameworkAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportFrameworkPostAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportOverviewAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/integrationTest/java/com/mls/services/reporting/reportingconfiguration/test/ReportPageAPITest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/main/java/com/mls/services/reporting/reportingconfiguration/service/ReportFrameworkPostService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/main/java/com/mls/services/reporting/reportingconfiguration/service/impl/NavigationNodeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/main/java/com/mls/services/reporting/reportingconfiguration/service/impl/ReportFrameworkPostServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/main/java/com/mls/services/reporting/reportingconfiguration/service/impl/ReportPageServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspace/reporting/reportingconfiguration-service/src/main/java/com/mls/services/reporting/reportingconfiguration/service/impl/UserAdministrationService.java">
           <value>
             <set />
           </value>

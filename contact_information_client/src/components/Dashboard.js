@@ -1,6 +1,6 @@
 import React from "react";
 
-import ContactList from "./ContactList";
+import ContactList from "./contact/ContactList";
 
 const Dashboard = () => {
     return (

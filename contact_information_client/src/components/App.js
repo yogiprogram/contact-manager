@@ -4,9 +4,9 @@ import {connect} from 'react-redux';
 import * as actions from '../actions';
 import Header from "./Header";
 import Dashboard from "./Dashboard";
-import ContactNew from "./ContactNew";
-import ContactEdit from "./ContactEdit";
-import ContactDelete from "./ContactDelete"
+import ContactNew from "./contact/ContactNew";
+import ContactEdit from "./contact/ContactEdit";
+import ContactDelete from "./contact/ContactDelete"
 
 
 class App extends Component {

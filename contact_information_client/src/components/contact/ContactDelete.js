@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as courseActions from '../actions';
+import * as courseActions from '../../actions';
 
 class ContactDelete extends Component {
     constructor(props) {

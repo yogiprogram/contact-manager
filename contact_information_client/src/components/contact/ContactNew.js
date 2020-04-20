@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import * as courseActions from '../actions';
+import * as courseActions from '../../actions';
 import ContactForm from "./ContactForm";
 
 class ContactNew extends Component {
@@ -19,7 +18,8 @@ class ContactNew extends Component {
 
     saveContact(event) {
         event.preventDefault();
-        this.props.actions.addContact(this.state.contact, this.props.history);
+        this.props.addContact(this.state.contact, this.props.history);
+
     }
 
     updateState(event) {
@@ -53,8 +53,8 @@ ContactNew.propTypes = {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(courseActions, dispatch)
-    };
+        addContact: (contact, history) => dispatch(courseActions.addContact(contact, history))
+    }
 }
 
 export default connect(null, mapDispatchToProps)(ContactNew);

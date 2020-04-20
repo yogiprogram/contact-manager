@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as courseActions from '../actions';
+import * as courseActions from '../../actions';
 import ContactForm from "./ContactForm";
 
 
@@ -64,9 +64,10 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps(state, ownProps) {
     let contact = {id: '', first_name: '', last_name: '', email: '', phone: '', status: 'INACTIVE'};
     const contactId = ownProps.match.params.id;
-    if (state.contacts !== undefined) {
+    if (state.contacts) {
         contact = state.contacts.find(contact => contact.id === contactId);
     }
+    console.log(contact);
     return {contact: contact};
 }
 

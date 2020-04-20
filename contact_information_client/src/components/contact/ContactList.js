@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux';
-import {fetchContacts} from '../actions';
+import {fetchContacts} from '../../actions';
 
 class ContactList extends Component {
 
