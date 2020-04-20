@@ -35,33 +35,39 @@ class ContactDelete extends Component {
         return this.setState({contact: contact});
     }
 
+    static getDerivedStateFromProps(props, current_state) {
+        if (current_state.contact !== props.contact) {
+            return{contact: props.contact};
+        }
+        return null
+    }
 
     render() {
         return (
             <div>
                 <h5>Delete Contact</h5>
-                <div key={this.state.contact.first_name}>
+                <div key="first_name">
                     <label>First Name</label>
                     <div>
                         {this.state.contact.first_name}
                     </div>
                 </div>
                 <br/>
-                <div key={this.state.contact.last_name}>
+                <div key="last_name">
                     <label>Last Name</label>
                     <div>
                         {this.state.contact.last_name}
                     </div>
                 </div>
                 <br/>
-                <div key={this.state.contact.email}>
+                <div key="email">
                     <label>Email Address </label>
                     <div>
                         {this.state.contact.email}
                     </div>
                 </div>
                 <br/>
-                <div key={this.state.contact.phone}>
+                <div key="phone">
                     <label>Phone Number</label>
                     <div>
                         {this.state.contact.phone}
@@ -99,7 +105,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps(state, ownProps) {
     let contact = {id: '', first_name: '', last_name: '', email: '', phone: ''};
     const contactId = ownProps.match.params.id;
-    if (state.contacts !== undefined) {
+    if (state.contacts) {
         contact = state.contacts.find(contact => contact.id === contactId)
     }
     return {contact: contact};

@@ -34,6 +34,13 @@ class ContactEdit extends Component {
         return this.setState({contact: contact});
     }
 
+    static getDerivedStateFromProps(props, current_state) {
+        if (current_state.contact !== props.contact) {
+            return{contact: props.contact};
+        }
+        return null
+    }
+
     render() {
         return (
             <div>
@@ -67,7 +74,6 @@ function mapStateToProps(state, ownProps) {
     if (state.contacts) {
         contact = state.contacts.find(contact => contact.id === contactId);
     }
-    console.log(contact);
     return {contact: contact};
 }
 
